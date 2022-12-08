@@ -1,6 +1,7 @@
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { fireDb } from "../fireApp";
+import EnquiriesTable from "../src/enquiries-table";
 import Sidebar from "../src/sidebar";
 import InAuth from "../utils/InAuth";
 
@@ -59,8 +60,12 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className={"mt-4"}>
+          <div className={"mt-4 space-y-1"}>
             <h3 className={"text-lg"}>Enquiries</h3>
+
+            <div>
+              <EnquiriesTable />
+            </div>
           </div>
         </div>
       </div>
