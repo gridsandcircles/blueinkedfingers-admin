@@ -114,7 +114,7 @@ const ManageProses = () => {
                           ) {
                             const blogDocRef = doc(
                               fireDb,
-                              "articles",
+                              "proses",
                               article.id
                             );
                             deleteDoc(blogDocRef)

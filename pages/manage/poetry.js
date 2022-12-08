@@ -114,7 +114,7 @@ const ManagePoetry = () => {
                           ) {
                             const blogDocRef = doc(
                               fireDb,
-                              "articles",
+                              "poetry",
                               article.id
                             );
                             deleteDoc(blogDocRef)
